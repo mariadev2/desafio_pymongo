@@ -54,12 +54,11 @@ for posts in posts.find():
     pprint.pprint(f"\n {post} ")
     print("-" * 50)
 
-#contagem
-print("contagem de todos documentos")
-print("-"*50)
+
 
 print(inserir_posts.inserted_ids)
 
+#excluir coleçoes
 base.new_posts.drop()
 
 print(inserir_posts.inserted_ids)
